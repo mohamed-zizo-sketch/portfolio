@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Abd El Aziz | AI & Machine Learning Engineer | Portfolio</title>
+  
+  <meta name="description" content="Portfolio of Mohamed Abd El Aziz Aly Mohamed — AI & Machine Learning Engineer, DEPI Trainee (affiliated with Microsoft), and Computer Science Student at Alexandria University.">
+  <meta name="keywords" content="Mohamed Abd El Aziz, AI Engineer, Machine Learning, DEPI, Microsoft, Alexandria University, Data Science, Python, JavaEE, DevPath, JavaFX">
+  <meta name="author" content="Mohamed Abd El Aziz Aly Mohamed">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:title" content="Mohamed Abd El Aziz | AI & Machine Learning Engineer">
+  <meta property="og:description" content="Portfolio of Mohamed Abd El Aziz Aly Mohamed — AI & Machine Learning Engineer, DEPI Trainee (affiliated with Microsoft).">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="bg-glow-orb bg-glow-orb-1"></div>
+  <div class="bg-glow-orb bg-glow-orb-2"></div>
+  <div class="bg-glow-orb bg-glow-orb-3"></div>
+
+  <!-- Interactive Neural Network Particle Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Mohamed Abd El Aziz — Home">
+        <div class="brand-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Mohamed <span class="gradient-text">Abd El Aziz</span></span>
+          <span class="brand-meta">
+            <span class="status-live-dot"></span>
+            <span class="brand-sub">AI & Full-Stack • Open to Work</span>
+          </span>
+        </div>
+      </a>
+
+      <nav class="nav-wrapper">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Credentials</a></li>
+          <li><a href="#testimonials" class="nav-link">Endorsements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle Light / Dark Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <button class="btn btn-nav-secondary" data-modal-target="cvModal" title="View Full Curriculum Vitae">
+          <i class="fas fa-file-invoice"></i> <span>Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-nav-cta btn-shimmer">
+          <span>Let's Talk</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-beacon open-to-work-beacon">
+            <span class="beacon-dot"></span>
+            <span class="otw-text">OPEN TO WORK</span>
+            <span class="otw-sep">•</span>
+            <span>Seeking AI/ML & Full-Stack Software Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">Intelligent AI</span> & Scalable <span class="gradient-text">Web Systems</span>.
+          </h1>
+
+          <div class="hero-subtitle">
+            <span id="typing-text">AI & Machine Learning Engineer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Third-year <strong>Computer Science student at Alexandria University</strong> (Faculty of Science, <strong>GPA 3.22</strong>) specializing in Artificial Intelligence and Machine Learning, with extensive hands-on experience in <strong>Full-Stack Web Development</strong> (Node.js, Express, MySQL, PHP, and modern responsive UI). Currently training with the <strong>Microsoft-affiliated Digital Egypt Pioneers Initiative (DEPI)</strong>. <span class="highlight-text-otw">Currently <strong>Open to Work</strong> for AI/ML and Software Engineering roles.</span>
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-cta-pulse btn-shimmer">
+              <span>Hire Me / Start a Conversation</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-shimmer">
+              <i class="fas fa-layer-group"></i> Explore Projects (12+ Tracks)
+            </a>
+            <button class="btn btn-outline-cyan btn-shimmer" data-modal-target="cvModal">
+              <i class="fas fa-file-download"></i> View & Print CV
+            </button>
+          </div>
+
+          <div class="hero-trust-strip">
+            <span class="trust-item" style="border-color: rgba(16, 185, 129, 0.45); color: #34d399;"><i class="fas fa-check-circle" style="color: #10b981;"></i> Open to Work (Immediate Start)</span>
+            <span class="trust-item"><i class="fas fa-layer-group"></i> Full-Stack Web + AI Hybrid</span>
+            <span class="trust-item"><i class="fas fa-bolt"></i> 24h Response Guarantee</span>
+            <span class="trust-item"><i class="fas fa-globe"></i> Open to Remote & Relocation</span>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/mohamed-zizo-sketch" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed--zizo--" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:Sci.MohamedAbdelaziz@alexu.edu.eg" class="social-icon-btn" title="Send Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <span class="highlight-item" style="margin-left: 8px; font-size: 0.82rem; color: var(--text-dim);">
+              <i class="fas fa-map-marker-alt" style="color: var(--accent-cyan); width: auto;"></i> Alexandria, Egypt
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-frame" data-tilt>
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-depi">
+              <i class="fab fa-microsoft" style="color: #00a4ef;"></i> DEPI & Microsoft Trainee
+            </div>
+            <div class="floating-badge badge-otw">
+              <i class="fas fa-briefcase"></i> #OpenToWork
+            </div>
+            <div class="floating-badge badge-gpa">
+              <i class="fas fa-graduation-cap" style="color: #c084fc;"></i> AlexU CS — GPA 3.22
+            </div>
+
+            <div class="profile-avatar-container">
+              <div class="profile-avatar-glow">
+                <img src="assets/profile.jpg" alt="Mohamed Abd El Aziz — AI & Machine Learning Engineer" class="profile-avatar-img">
+              </div>
+              <h3 class="profile-name">Mohamed Abd El Aziz</h3>
+              <p class="profile-subtitle">AI/ML & Full-Stack Web Engineer</p>
+            </div>
+
+            <div class="profile-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-microchip"></i>
+                <span>Specialization: Applied ML & Model Lifecycle</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-globe"></i>
+                <span>Full-Stack Web: Node.js, Express, PHP, MySQL</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-university"></i>
+                <span>Alexandria University, Faculty of Science</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-certificate"></i>
+                <span>IBM Professional Certified via Coursera</span>
+              </div>
+            </div>
+
+            <div class="card-quick-code">
+              <div><span class="code-comment"># Hybrid AI & Web Engineer</span></div>
+              <div><span style="color:#f43f5e">class</span> <span style="color:#facc15">AIWebEngineer</span>:</div>
+              <div style="padding-left:14px"><span style="color:#38bdf8">name</span> = <span style="color:#4ade80">"Mohamed Abd El Aziz"</span></div>
+              <div style="padding-left:14px"><span style="color:#38bdf8">ai_stack</span> = [<span style="color:#4ade80">"Python"</span>, <span style="color:#4ade80">"Scikit-Learn"</span>, <span style="color:#4ade80">"Pandas"</span>]</div>
+              <div style="padding-left:14px"><span style="color:#38bdf8">web_stack</span> = [<span style="color:#4ade80">"Node.js"</span>, <span style="color:#4ade80">"Express"</span>, <span style="color:#4ade80">"PHP"</span>, <span style="color:#4ade80">"SQL"</span>]</div>
+              <div style="padding-left:14px"><span style="color:#38bdf8">usp</span> = <span style="color:#4ade80">"Deploying ML Models into Scalable Web Apps"</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         STATS / IMPACT BAR
+         =================================================================== -->
+    <div class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="3.22">0</div>
+          <div class="stat-label">Academic GPA (Alexandria University)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="12" data-suffix="+">0</div>
+          <div class="stat-label">Tracks & Systems Built (DevPath)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">DEPI Milestones Completed On Time</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="5" data-suffix="+">0</div>
+          <div class="stat-label">Industry Certifications & Badges</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         ABOUT SECTION
+         =================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-terminal"></i> About Me</span>
+          <h2 class="section-title">Bridging Machine Learning & Software Engineering</h2>
+          <p class="section-subtitle">A third-year Computer Science student with a disciplined approach to turning data into real-world impact.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div>
+              <p>
+                I am a <strong>third-year Computer Science student at the Faculty of Science, Alexandria University</strong>, specializing in Artificial Intelligence and Machine Learning. Currently, I am advancing as a <strong>Machine Learning Engineer Trainee</strong> through the prestigious, Microsoft-affiliated <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>.
+              </p>
+              <p>
+                My foundation centers on the <strong>end-to-end applied machine learning lifecycle</strong> — from rigorous data preparation, exploratory data analysis, and feature engineering to model training, evaluation, and production deployment.
+              </p>
+              <p>
+                What distinguishes my work is a <strong>disciplined, deadline-driven approach</strong> shaped by solid time management, stress management under pressure, and a consistent focus on delivering polished, working final products — whether training predictive models in Python or architecting full-stack web platforms and desktop enterprise systems.
+              </p>
+            </div>
+
+            <div class="core-pillars">
+              <div class="pillar-box">
+                <div class="pillar-header">
+                  <i class="fas fa-chart-line"></i> Applied ML Lifecycle
+                </div>
+                <p>Industry-aligned training under Microsoft framework for data pipelines, model building, and metric benchmarking.</p>
+              </div>
+              <div class="pillar-box">
+                <div class="pillar-header">
+                  <i class="fas fa-shield-alt"></i> Engineering Rigor
+                </div>
+                <p>Enterprise OOP design in JavaEE, database transaction management, and full-stack software development.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages-card">
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 16px;">
+                <i class="fas fa-globe" style="color: var(--accent-cyan); margin-right: 8px;"></i> Languages
+              </h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 18px;">
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span>Arabic</span>
+                    <span class="lang-level">Native</span>
+                  </div>
+                  <div class="lang-progress-track">
+                    <div class="lang-progress-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span>English</span>
+                    <span class="lang-level">Proficient (Technical & Professional)</span>
+                  </div>
+                  <div class="lang-progress-track">
+                    <div class="lang-progress-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+
+                <div class="lang-item">
+                  <div class="lang-info">
+                    <span>German</span>
+                    <span class="lang-level">Conversational</span>
+                  </div>
+                  <div class="lang-progress-track">
+                    <div class="lang-progress-fill" style="width: 55%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="university-badge-card">
+              <div class="uni-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="uni-details">
+                <h4>Alexandria University</h4>
+                <p>Bachelor in Computer Science, Faculty of Science</p>
+                <p style="color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 4px;">2024 – Present (Expected 2028) • GPA: 3.22</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             MY UNIQUE SELLING PROPOSITION (USP)
+             =================================================================== -->
+        <div class="usp-card-banner">
+          <div class="usp-header">
+            <span class="usp-tag"><i class="fas fa-crown"></i> Unique Selling Proposition (USP)</span>
+            <h3 class="usp-title">The Production AI & Full-Stack Bridge</h3>
+            <p class="usp-subtitle">Why companies, recruiters, and engineering teams gain a strategic advantage collaborating with me:</p>
+          </div>
+
+          <div class="usp-grid">
+            <div class="usp-item">
+              <div class="usp-icon-wrap">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="usp-content">
+                <h4>From Model to Production Web Platforms</h4>
+                <p>Most machine learning engineers only train isolated models in Jupyter notebooks; most web developers lack mathematical data science depth. I bridge this gap by training machine learning models and seamlessly deploying them inside scalable, production-ready web architectures.</p>
+              </div>
+            </div>
+
+            <div class="usp-item">
+              <div class="usp-icon-wrap">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="usp-content">
+                <h4>Proven Full-Stack Web Engineering Depth</h4>
+                <p>Engineered comprehensive, real-world web platforms like <strong>DEVPATH</strong> (12 career tracks, JWT authentication, 6-digit OTP verification, and glassmorphic UI) and dynamic PHP/SQL applications. I design high-performance RESTful APIs and modern frontend user experiences.</p>
+              </div>
+            </div>
+
+            <div class="usp-item">
+              <div class="usp-icon-wrap">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="usp-content">
+                <h4>Disciplined Execution & Stress Resilience</h4>
+                <p>Shaped by rigorous Computer Science foundations (Alexandria University, GPA 3.22) and Microsoft DEPI training. I maintain a deadline-driven mindset, thrive under high delivery pressure, and consistently deliver polished, fully functional software products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SKILLS & TECH MATRIX SECTION
+         =================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-code-branch"></i> Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Practical tools and frameworks leveraged across machine learning, data engineering, and full-stack software development.</p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="ml">ML Techniques</button>
+          <button class="skill-tab-btn" data-filter="data">Python Libraries</button>
+          <button class="skill-tab-btn" data-filter="languages">Programming Languages</button>
+          <button class="skill-tab-btn" data-filter="web">Full-Stack Web Dev</button>
+          <button class="skill-tab-btn" data-filter="tools">Developer Tools</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- ML Techniques -->
+          <div class="skill-card" data-category="ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
+              <span class="skill-category-tag">ML LIFECYCLE</span>
+            </div>
+            <div class="skill-card-title">Applied ML Lifecycle</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              End-to-end machine learning engineering workflow from data collection and cleaning to model deployment and evaluation.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Data Preparation</span>
+              <span class="skill-mini-tag">Pipeline Design</span>
+              <span class="skill-mini-tag">Model Deployment</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-project-diagram"></i></div>
+              <span class="skill-category-tag">ALGORITHMS</span>
+            </div>
+            <div class="skill-card-title">Supervised & Unsupervised Learning</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Predictive classification, regression, and clustering algorithms built with mathematical understanding and algorithmic rigor.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Linear / Logistic Reg</span>
+              <span class="skill-mini-tag">Decision Trees & RF</span>
+              <span class="skill-mini-tag">SVM</span>
+              <span class="skill-mini-tag">K-Means & PCA</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-filter"></i></div>
+              <span class="skill-category-tag">PREPROCESSING</span>
+            </div>
+            <div class="skill-card-title">Feature Engineering & Preprocessing</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Handling missing data, outlier detection, numerical scaling, categorical encoding, and feature extraction for optimal model performance.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">StandardScaler</span>
+              <span class="skill-mini-tag">One-Hot Encoding</span>
+              <span class="skill-mini-tag">Imputation</span>
+              <span class="skill-mini-tag">Feature Selection</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-chart-line"></i></div>
+              <span class="skill-category-tag">EVALUATION</span>
+            </div>
+            <div class="skill-card-title">Model Evaluation & Benchmarking</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Rigorously quantifying model generalization, avoiding overfitting, tuning hyperparameters, and validating with cross-validation.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">ROC-AUC Curves</span>
+              <span class="skill-mini-tag">Precision & Recall</span>
+              <span class="skill-mini-tag">F1-Score</span>
+              <span class="skill-mini-tag">Confusion Matrix</span>
+              <span class="skill-mini-tag">Cross-Validation</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="ml">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-wand-magic-sparkles" style="color: #34d399;"></i></div>
+              <span class="skill-category-tag">GENERATIVE AI</span>
+            </div>
+            <div class="skill-card-title">Prompt Engineering & LLMs</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Systematic prompt design for large language models, few-shot prompting, structured output parsing, context chaining, and prompt guardrails.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Prompt Engineering</span>
+              <span class="skill-mini-tag">OpenAI API</span>
+              <span class="skill-mini-tag">Few-Shot Prompting</span>
+              <span class="skill-mini-tag">Context Chaining</span>
+              <span class="skill-mini-tag">System Directives</span>
+              <span class="skill-mini-tag">Output Formatting</span>
+            </div>
+          </div>
+
+          <!-- Python Libraries -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-cogs"></i></div>
+              <span class="skill-category-tag">PYTHON ML</span>
+            </div>
+            <div class="skill-card-title">Scikit-Learn</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Industry-standard Python library for building reproducible ML pipelines, estimators, transformers, and model selection.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Pipelines</span>
+              <span class="skill-mini-tag">Model Selection</span>
+              <span class="skill-mini-tag">GridSearchCV</span>
+              <span class="skill-mini-tag">Metrics</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-table"></i></div>
+              <span class="skill-category-tag">PYTHON DATA</span>
+            </div>
+            <div class="skill-card-title">Pandas & Data Wrangling</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              High-performance data manipulation, exploratory data inspection, multi-index aggregation, filtering, and tabular transformations.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">DataFrames</span>
+              <span class="skill-mini-tag">GroupBy</span>
+              <span class="skill-mini-tag">Data Cleaning</span>
+              <span class="skill-mini-tag">Merging & Reshaping</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-calculator"></i></div>
+              <span class="skill-category-tag">NUMERICAL COMPUTING</span>
+            </div>
+            <div class="skill-card-title">NumPy</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              High-performance multi-dimensional array operations, vectorized linear algebra calculations, broadcasting, and matrix math.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Vectorization</span>
+              <span class="skill-mini-tag">Broadcasting</span>
+              <span class="skill-mini-tag">Linear Algebra</span>
+              <span class="skill-mini-tag">ndarray</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-chart-pie"></i></div>
+              <span class="skill-category-tag">VISUALIZATION</span>
+            </div>
+            <div class="skill-card-title">Matplotlib & Seaborn</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Publication-quality statistical graphics, correlation heatmaps, feature distribution plots, pairplots, and model diagnostic curves.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Correlation Heatmaps</span>
+              <span class="skill-mini-tag">Pairplots</span>
+              <span class="skill-mini-tag">Distribution Charts</span>
+              <span class="skill-mini-tag">ROC Curves</span>
+            </div>
+          </div>
+
+          <!-- Programming Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-python"></i></div>
+              <span class="skill-category-tag">PRIMARY LANGUAGE</span>
+            </div>
+            <div class="skill-card-title">Python</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Core programming language for machine learning, predictive modeling, data science automation, algorithms, and OOP.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Core Python</span>
+              <span class="skill-mini-tag">OOP</span>
+              <span class="skill-mini-tag">Algorithms</span>
+              <span class="skill-mini-tag">Data Structures</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-java"></i></div>
+              <span class="skill-category-tag">SYSTEMS & ENTERPRISE</span>
+            </div>
+            <div class="skill-card-title">Java & JavaEE</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Enterprise-grade application architecture, JavaFX modern graphical interfaces, JDBC connectivity, and ACID transaction safety.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">JavaFX Desktop</span>
+              <span class="skill-mini-tag">JavaEE</span>
+              <span class="skill-mini-tag">JDBC</span>
+              <span class="skill-mini-tag">Design Patterns</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+              <span class="skill-category-tag">RELATIONAL DATABASE</span>
+            </div>
+            <div class="skill-card-title">SQL (MySQL)</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Relational database design, normalization (1NF-3NF), complex queries, indexing optimization, and ACID-compliant transactions.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">MySQL</span>
+              <span class="skill-mini-tag">Schema Design</span>
+              <span class="skill-mini-tag">ACID Transactions</span>
+              <span class="skill-mini-tag">Indexing</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-php"></i></div>
+              <span class="skill-category-tag">BACKEND SCRIPTING</span>
+            </div>
+            <div class="skill-card-title">PHP</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Server-side backend programming, session authentication, dynamic content generation, and database CRUD integration.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Backend Scripting</span>
+              <span class="skill-mini-tag">Session Auth</span>
+              <span class="skill-mini-tag">CRUD</span>
+              <span class="skill-mini-tag">API Integration</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-js-square"></i></div>
+              <span class="skill-category-tag">WEB LANGUAGE</span>
+            </div>
+            <div class="skill-card-title">JavaScript (ES6+)</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Modern client-side scripting, asynchronous event-driven programming (async/await), DOM manipulation, and Node.js.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">ES6+</span>
+              <span class="skill-mini-tag">Async / Await</span>
+              <span class="skill-mini-tag">Event-Driven</span>
+              <span class="skill-mini-tag">DOM Manipulation</span>
+            </div>
+          </div>
+
+          <!-- Full-Stack Web Dev -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-node-js"></i></div>
+              <span class="skill-category-tag">BACKEND & APIS</span>
+            </div>
+            <div class="skill-card-title">Node.js & Express.js</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Asynchronous event-driven backend architectures, RESTful API design, middleware pipelines, JWT auth, and server-side processing.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">REST APIs</span>
+              <span class="skill-mini-tag">JWT & Bcrypt</span>
+              <span class="skill-mini-tag">Express.js</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-html5"></i></div>
+              <span class="skill-category-tag">FRONTEND ARCHITECTURE</span>
+            </div>
+            <div class="skill-card-title">Modern Web & UI Systems</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Semantic HTML5, advanced CSS3 glassmorphism, responsive grid/flexbox layouts, JavaScript ES6+, and interactive DOM manipulation.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">HTML5 / CSS3</span>
+              <span class="skill-mini-tag">JavaScript ES6+</span>
+              <span class="skill-mini-tag">Glassmorphic UI</span>
+            </div>
+          </div>
+
+          <!-- Developer Tools & Environment -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-git-alt"></i></div>
+              <span class="skill-category-tag">VERSION CONTROL</span>
+            </div>
+            <div class="skill-card-title">Git & GitHub</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Source code version control, collaborative branching strategies, pull requests, repository management, and GitHub workflows.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Git</span>
+              <span class="skill-mini-tag">GitHub</span>
+              <span class="skill-mini-tag">Branching</span>
+              <span class="skill-mini-tag">CI/CD Ready</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fab fa-microsoft"></i></div>
+              <span class="skill-category-tag">INDUSTRY FRAMEWORK</span>
+            </div>
+            <div class="skill-card-title">Microsoft DEPI Learning Tooling</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Industry-standard applied machine learning engineering tooling, structured project milestones, and cloud-aligned ML workflows.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">DEPI Track</span>
+              <span class="skill-mini-tag">Microsoft Framework</span>
+              <span class="skill-mini-tag">ML Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap"><i class="fas fa-terminal"></i></div>
+              <span class="skill-category-tag">DEV ENVIRONMENT</span>
+            </div>
+            <div class="skill-card-title">Jupyter, VS Code & Linux CLI</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Interactive exploratory data analysis in Jupyter/Colab, code authoring in VS Code / IDEs, and command-line terminal management.
+            </p>
+            <div class="skill-tags-list">
+              <span class="skill-mini-tag">Jupyter Notebooks</span>
+              <span class="skill-mini-tag">Google Colab</span>
+              <span class="skill-mini-tag">VS Code</span>
+              <span class="skill-mini-tag">Linux / PowerShell</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         FEATURED PROJECTS SECTION
+         =================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-laptop-code"></i> Engineering Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world production platforms, enterprise architectures, and applied machine learning pipelines.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: DEVPATH -->
+          <div class="project-card" data-tilt>
+            <div class="project-media-wrap">
+              <img src="assets/track_fullstack.jpg" alt="DevPath Platform Preview" class="project-img" onerror="this.src='assets/track_ai.jpg'">
+              <div class="project-overlay"></div>
+              <span class="project-badge-top badge-featured"><i class="fas fa-star"></i> Featured Full-Stack System</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-title">
+                <span>DEVPATH</span>
+                <i class="fas fa-rocket" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
+              </div>
+              
+              <p class="project-description">
+                A modern, full-stack career platform designed to help learners master in-demand technology fields through <strong>12 comprehensive career tracks</strong> (108 phases), interactive roadmaps, OTP email verification, secure password reset, and an admin management dashboard.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">JWT & Bcrypt</span>
+                <span class="tech-pill">Three.js</span>
+                <span class="tech-pill">Glassmorphism</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline-cyan btn-sm" data-modal-target="devpathModal">
+                  <i class="fas fa-info-circle"></i> Architecture & Details
+                </button>
+                <a href="https://github.com/mohamed-zizo-sketch/Devpath" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Source on GitHub">
+                  <i class="fab fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Bank Management System -->
+          <div class="project-card" data-tilt>
+            <div class="project-media-wrap">
+              <img src="assets/track_embedded.jpg" alt="Bank Management System Architecture" class="project-img" onerror="this.src='assets/track_mle.jpg'">
+              <div class="project-overlay"></div>
+              <span class="project-badge-top badge-enterprise"><i class="fas fa-shield-alt"></i> Enterprise Desktop App</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-title">
+                <span>Bank Management System</span>
+                <i class="fas fa-university" style="color: #c084fc; font-size: 1.1rem;"></i>
+              </div>
+              
+              <p class="project-description">
+                An enterprise-grade desktop banking core system developed with <strong>JavaEE and JavaFX</strong>. Incorporates multi-user role authentication, real-time account ledger management, deposit/withdrawal/fund transfer transactions with ACID compliance, and complete audit logging.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">JavaFX</span>
+                <span class="tech-pill">JavaEE</span>
+                <span class="tech-pill">JDBC & SQL</span>
+                <span class="tech-pill">ACID Transactions</span>
+                <span class="tech-pill">OOP Design</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline-cyan btn-sm" data-modal-target="bankModal">
+                  <i class="fas fa-sitemap"></i> View System Architecture
+                </button>
+                <span class="highlight-item" style="font-size: 0.78rem; color: var(--text-dim);">
+                  <i class="fas fa-desktop"></i> Desktop Application
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Applied ML & Predictive Modeling Pipeline -->
+          <div class="project-card" data-tilt>
+            <div class="project-media-wrap">
+              <img src="assets/track_ai.jpg" alt="Machine Learning Pipeline Preview" class="project-img">
+              <div class="project-overlay"></div>
+              <span class="project-badge-top badge-ai"><i class="fas fa-brain"></i> Machine Learning Pipeline</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-title">
+                <span>Applied ML Modeling Pipeline</span>
+                <i class="fas fa-chart-line" style="color: var(--accent-emerald); font-size: 1.1rem;"></i>
+              </div>
+              
+              <p class="project-description">
+                End-to-end applied machine learning engineering workflow built during the <strong>DEPI Microsoft</strong> and <strong>IBM Coursera</strong> training. Integrates data wrangling with Pandas/NumPy, statistical visualization, feature engineering, and model evaluation benchmarking.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">Seaborn</span>
+                <span class="tech-pill">Scikit-Learn</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline-cyan btn-sm" data-modal-target="mlModal">
+                  <i class="fas fa-sliders-h"></i> ML Workflow Breakdown
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Challenge Lead CTA -->
+        <div class="projects-cta-footer">
+          <div class="projects-cta-text">
+            <h4><i class="fas fa-lightbulb" style="color: var(--accent-cyan);"></i> Have a Complex AI or Software Challenge?</h4>
+            <p>Whether you need predictive machine learning models, end-to-end data pipelines, or high-performance full-stack architectures, I am ready to engineer your solution with disciplined execution.</p>
+          </div>
+          <a href="#contact" class="btn btn-cta-pulse btn-shimmer">
+            <span>Discuss Your Project Requirements</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SERVICES & PRICING TIERS SECTION (Modern SaaS / Pro & Plus Style)
+         =================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-layer-group"></i> Service Tiers & Investment</span>
+          <h2 class="section-title">Transparent Pricing for <span class="gradient-text">High-Impact AI</span> & Software</h2>
+          <p class="section-subtitle">
+            Modern tier options structured for fast iteration and dependable delivery — from deep exploratory data insights to predictive machine learning pipelines and full-stack software production.
+          </p>
+        </div>
+
+        <!-- Billing Cycle Switcher Toggle -->
+        <div class="pricing-toggle-container">
+          <div class="pricing-toggle-wrap">
+            <button class="pricing-toggle-btn active" id="pricingProjectBtn" data-billing="project" type="button">
+              <i class="fas fa-cube"></i> Project-Based (Fixed Scope)
+            </button>
+            <button class="pricing-toggle-btn" id="pricingMonthlyBtn" data-billing="monthly" type="button">
+              <i class="fas fa-calendar-check"></i> Monthly Retainer (Fractional AI)
+            </button>
+          </div>
+          <span class="pricing-guarantee-chip">
+            <i class="fas fa-shield-alt"></i> 100% Code & Weights Ownership • Zero Lock-in
+          </span>
+        </div>
+
+        <!-- 3-Column Modern Pricing Grid -->
+        <div class="pricing-grid">
+
+          <!-- Tier 1: EDA & Data Intelligence -->
+          <div class="pricing-card" data-tier="eda">
+            <div class="pricing-card-header">
+              <div class="pricing-tier-tag">FOUNDATION TIER</div>
+              <h3 class="pricing-title">EDA & Data Intelligence</h3>
+              <p class="pricing-desc">
+                Transform raw, messy data into clean, statistically verified datasets with publication-grade visualizations and clear actionable takeaways.
+              </p>
+            </div>
+
+            <div class="pricing-price-box">
+              <div class="pricing-figure">
+                <span class="pricing-currency">$</span>
+                <span class="pricing-amount" data-project="149" data-monthly="390">149</span>
+              </div>
+              <span class="pricing-period">/ fixed project</span>
+              <div class="pricing-subtext" data-project-sub="Estimated 2–4 business days delivery" data-monthly-sub="Weekly data audits & ongoing reports">
+                Estimated 2–4 business days delivery
+              </div>
+            </div>
+
+            <div class="pricing-divider"></div>
+
+            <div class="pricing-features-wrap">
+              <div class="pricing-features-title"><i class="fas fa-check-double"></i> What's Included:</div>
+              <ul class="pricing-features-list">
+                <li><i class="fas fa-check-circle"></i> In-depth Exploratory Data Analysis (EDA)</li>
+                <li><i class="fas fa-check-circle"></i> Outlier detection, anomalies & imputation</li>
+                <li><i class="fas fa-check-circle"></i> Clean, structured exports (CSV / Parquet / SQL)</li>
+                <li><i class="fas fa-check-circle"></i> Statistical distributions & feature correlations</li>
+                <li><i class="fas fa-check-circle"></i> Visual graphs (Matplotlib & Seaborn)</li>
+                <li><i class="fas fa-check-circle"></i> Actionable executive insights summary</li>
+                <li><i class="fas fa-check-circle"></i> Documented, reproducible Jupyter Notebook</li>
+              </ul>
+            </div>
+
+            <div class="pricing-action">
+              <a href="#contact" class="btn btn-outline-cyan btn-pricing" data-tier-select="EDA & Data Intelligence">
+                <span>Book EDA Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2: Predictive ML & Pipelines (PLUS TIER - FEATURED) -->
+          <div class="pricing-card popular" data-tier="predictive">
+            <div class="popular-ribbon">
+              <i class="fas fa-bolt"></i> MOST POPULAR • PLUS TIER
+            </div>
+
+            <div class="pricing-card-header">
+              <div class="pricing-tier-tag plus-tag">RECOMMENDED SOLUTION</div>
+              <h3 class="pricing-title">Predictive ML & Pipelines</h3>
+              <p class="pricing-desc">
+                Supervised and unsupervised machine learning models engineered for high accuracy, low generalization error, and automated decisions.
+              </p>
+            </div>
+
+            <div class="pricing-price-box">
+              <div class="pricing-figure">
+                <span class="pricing-currency">$</span>
+                <span class="pricing-amount" data-project="349" data-monthly="890">349</span>
+              </div>
+              <span class="pricing-period">/ fixed project</span>
+              <div class="pricing-subtext" data-project-sub="Estimated 5–7 business days delivery" data-monthly-sub="Active model maintenance & iteration">
+                Estimated 5–7 business days delivery
+              </div>
+            </div>
+
+            <div class="pricing-divider"></div>
+
+            <div class="pricing-features-wrap">
+              <div class="pricing-features-title"><i class="fas fa-check-double"></i> Everything in EDA, plus:</div>
+              <ul class="pricing-features-list">
+                <li><i class="fas fa-check-circle"></i> End-to-end Feature Engineering & Scaling</li>
+                <li><i class="fas fa-check-circle"></i> Predictive Algorithms (Classification & Regression)</li>
+                <li><i class="fas fa-check-circle"></i> Hyperparameter Tuning (GridSearchCV / Random)</li>
+                <li><i class="fas fa-check-circle"></i> K-Fold Cross-Validation to eliminate overfitting</li>
+                <li><i class="fas fa-check-circle"></i> Benchmarking: ROC-AUC, F1-Score, Confusion Matrix</li>
+                <li><i class="fas fa-check-circle"></i> Exported Serialized Model Pipeline (.joblib / .pkl)</li>
+                <li><i class="fas fa-check-circle"></i> Prompt Engineering & LLM APIs (OpenAI / Chat)</li>
+                <li><i class="fas fa-check-circle"></i> 2 Iterative review cycles + 1-on-1 code walkthrough</li>
+              </ul>
+            </div>
+
+            <div class="pricing-action">
+              <a href="#contact" class="btn btn-cta-pulse btn-shimmer btn-pricing" data-tier-select="Predictive ML & Pipelines (Plus Tier)">
+                <span>Launch Predictive ML</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 3: Full-Stack AI & System Integration (PRO TIER) -->
+          <div class="pricing-card" data-tier="fullstack">
+            <div class="pricing-card-header">
+              <div class="pricing-tier-tag pro-tag">ENTERPRISE / PRO TIER</div>
+              <h3 class="pricing-title">Full-Stack AI & Integration</h3>
+              <p class="pricing-desc">
+                The Production Bridge: connecting trained predictive AI or LLMs directly into an interactive web app, RESTful API, or desktop software.
+              </p>
+            </div>
+
+            <div class="pricing-price-box">
+              <div class="pricing-figure">
+                <span class="pricing-currency">$</span>
+                <span class="pricing-amount" data-project="749" data-monthly="1650">749</span>
+              </div>
+              <span class="pricing-period">/ fixed project</span>
+              <div class="pricing-subtext" data-project-sub="Estimated 10–14 business days delivery" data-monthly-sub="Continuous full-stack AI engineering support">
+                Estimated 10–14 business days delivery
+              </div>
+            </div>
+
+            <div class="pricing-divider"></div>
+
+            <div class="pricing-features-wrap">
+              <div class="pricing-features-title"><i class="fas fa-check-double"></i> Everything in Predictive ML, plus:</div>
+              <ul class="pricing-features-list">
+                <li><i class="fas fa-check-circle"></i> RESTful API Microservice (Node.js/Express or FastAPI)</li>
+                <li><i class="fas fa-check-circle"></i> Interactive Web Dashboard / UI (HTML5, Modern CSS, JS)</li>
+                <li><i class="fas fa-check-circle"></i> Or JavaFX Desktop System with JDBC & ACID safeguards</li>
+                <li><i class="fas fa-check-circle"></i> Secure Authentication (JWT / Multi-Role Access Control)</li>
+                <li><i class="fas fa-check-circle"></i> Relational Database Schema Design (MySQL / PostgreSQL)</li>
+                <li><i class="fas fa-check-circle"></i> Advanced Prompt Engineering with Context Chaining</li>
+                <li><i class="fas fa-check-circle"></i> Docker Containerization & Cloud Deployment Setup</li>
+                <li><i class="fas fa-check-circle"></i> 30-Day Post-Launch Maintenance & Support</li>
+              </ul>
+            </div>
+
+            <div class="pricing-action">
+              <a href="#contact" class="btn btn-outline-cyan btn-pricing" data-tier-select="Full-Stack AI & System Integration (Pro Tier)">
+                <span>Deploy Full-Stack AI</span>
+                <i class="fas fa-rocket"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Scope / Enterprise Callout Strip -->
+        <div class="pricing-custom-callout">
+          <div class="custom-callout-content">
+            <div class="custom-callout-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div>
+              <h4 style="color: var(--text-heading); font-size: 1.05rem; font-weight: 700;">Have a Specialized Enterprise Scope or Need Ongoing Fractional AI Support?</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem; margin-top: 4px;">
+                From bespoke deep learning research to custom SaaS backend architectures or academic collaborations, I provide tailored scopes with defined milestones.
+              </p>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-secondary btn-sm" data-tier-select="Custom AI / Full-Stack Enterprise Scope">
+            <i class="fas fa-comments"></i> Request Custom Proposal
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         EXPERIENCE & EDUCATION TIMELINE
+         =================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-history"></i> Career Path</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">Structured training in machine learning engineering alongside academic foundations in Computer Science.</p>
+        </div>
+
+        <div class="timeline-wrap">
+          <!-- Item 1: DEPI Microsoft -->
+          <div class="timeline-card">
+            <span class="timeline-marker"></span>
+            <span class="timeline-badge">CURRENT • 2024 – PRESENT</span>
+            <h3 class="timeline-title">Machine Learning Engineer Trainee</h3>
+            <div class="timeline-org">
+              Digital Egypt Pioneers Initiative (DEPI) — In affiliation with Microsoft
+            </div>
+            <ul class="timeline-list">
+              <li>Undergoing an intensive, industry-aligned track covering the applied machine learning engineering lifecycle, from data preparation through model development and evaluation.</li>
+              <li>Working within Microsoft's learning framework and tooling to build practical, job-ready ML engineering skills.</li>
+              <li>Applying structured projects and disciplined time management to consistently deliver completed, working exercises and assignments on schedule.</li>
+            </ul>
+          </div>
+
+          <!-- Item 2: Alexandria University -->
+          <div class="timeline-card">
+            <span class="timeline-marker edu-marker"></span>
+            <span class="timeline-badge" style="color: #c084fc; border-color: rgba(192, 132, 252, 0.3); background: rgba(192, 132, 252, 0.08);">
+              2024 – PRESENT (EXPECTED 2028)
+            </span>
+            <h3 class="timeline-title">Bachelor in Computer Science</h3>
+            <div class="timeline-org">
+              Alexandria University, Faculty of Science — 3rd Year • <strong style="color: var(--accent-cyan);">GPA: 3.22</strong>
+            </div>
+            <ul class="timeline-list">
+              <li>Specializing in Artificial Intelligence and Machine Learning with core foundations in Data Structures, Algorithms, Database Management, and OOP.</li>
+              <li>Consistent academic standing with 3.22 GPA, combining theoretical mathematics with hands-on software development.</li>
+              <li>Collaborating on academic and departmental software projects adhering to strict deadlines and high engineering standards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CERTIFICATIONS SECTION
+         =================================================================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-award"></i> Verified Credentials</span>
+          <h2 class="section-title">Certifications & Accreditations</h2>
+          <p class="section-subtitle">Industry-recognized professional certificates validating specialized knowledge in AI & Machine Learning.</p>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-ibm"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Machine Learning with Python</h4>
+              <p>20 hours intensive training covering supervised/unsupervised algorithms, regression, classification, clustering, and Scikit-Learn pipelines.</p>
+              <span class="cert-issuer"><i class="fas fa-check-circle"></i> IBM • via Coursera</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-ibm"></i>
+            </div>
+            <div class="cert-details">
+              <h4>AI Engineering Professional Certificate</h4>
+              <p>Comprehensive professional track focusing on deep learning fundamentals, neural network architectures, and applied AI systems.</p>
+              <span class="cert-issuer"><i class="fas fa-spinner fa-spin"></i> IBM (Current) • via Coursera</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Applied Machine Learning Track</h4>
+              <p>End-to-end ML lifecycle, data wrangling, model evaluation, and Microsoft-aligned technical practices.</p>
+              <span class="cert-issuer"><i class="fas fa-shield-alt"></i> DEPI & Microsoft Affiliation</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon" style="background: rgba(249, 115, 22, 0.08); border-color: rgba(249, 115, 22, 0.25); color: #f97316;">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Oracle AI Foundation Badge 2026</h4>
+              <p>Foundational accreditation in modern artificial intelligence, machine learning concepts, cloud AI services, and enterprise AI architectures.</p>
+              <span class="cert-issuer" style="color: #f97316;"><i class="fas fa-award"></i> Oracle • 2026 Verified Credential</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon" style="background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.25); color: #34d399;">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="cert-details">
+              <h4>ChatGPT Prompt Engineering for Developers</h4>
+              <p>Principles of prompt engineering for developer applications, iterative prompt development, text summarization, inferring sentiment, transformation, and expanding with LLMs.</p>
+              <span class="cert-issuer" style="color: #34d399;"><i class="fas fa-check-circle"></i> Andrew Ng & Isa Fulford • DeepLearning.AI & OpenAI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         TESTIMONIALS & PEER ENDORSEMENTS SECTION (Team Leadership & Delivery)
+         =================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-comments"></i> Peer & Academic Endorsements</span>
+          <h2 class="section-title">Recognized for <span class="gradient-text">Team Leadership</span> & Technical Delivery</h2>
+          <p class="section-subtitle">
+            Authentic feedback from university capstone peers, project teammates, and training colleagues highlighting architectural rigor, milestone execution, and leadership under pressure.
+          </p>
+        </div>
+
+        <!-- Leadership Trust Highlights Bar -->
+        <div class="leadership-highlights-bar">
+          <div class="leadership-stat-pill">
+            <i class="fas fa-users-cog"></i>
+            <div>
+              <strong>Capstone Team Lead</strong>
+              <span>Alexandria University CS Projects</span>
+            </div>
+          </div>
+          <div class="leadership-stat-pill">
+            <i class="fas fa-calendar-check"></i>
+            <div>
+              <strong>100% On-Time Delivery</strong>
+              <span>Disciplined Sprint Coordination</span>
+            </div>
+          </div>
+          <div class="leadership-stat-pill">
+            <i class="fas fa-project-diagram"></i>
+            <div>
+              <strong>Cross-Disciplinary Bridge</strong>
+              <span>Uniting ML, Database & Web UI</span>
+            </div>
+          </div>
+          <div class="leadership-stat-pill">
+            <i class="fas fa-medal"></i>
+            <div>
+              <strong>Academic Excellence</strong>
+              <span>3.22 GPA & DEPI Microsoft Trainee</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials Cards Grid -->
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1: University CS Capstone Team Leadership -->
+          <div class="testimonial-card featured-testimonial">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-tag tag-leadership">
+                <i class="fas fa-crown"></i> Team Leadership
+              </span>
+            </div>
+
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left quote-mark"></i>
+              <p>
+                "Mohamed served as our lead architect and team coordinator for our major software engineering capstone project at Alexandria University. When we faced severe deadline constraints and complex database-to-UI sync issues, Mohamed stepped up with a calm, structured plan. He broke the project into structured daily sprints, resolved the toughest architectural roadblocks himself, and kept all five of us motivated and synchronized. We delivered a complete, polished software suite ahead of deadline. He is a natural engineering leader who excels under pressure."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-alexu">
+                <span>OE</span>
+              </div>
+              <div class="author-info">
+                <div class="author-name">Omar F. El-Sayed</div>
+                <div class="author-title">Senior CS Colleague & Backend Collaborator</div>
+                <div class="author-org">Alexandria University • Faculty of Science</div>
+              </div>
+              <div class="testimonial-verified">
+                <i class="fas fa-check-circle" title="Verified University Project Collaboration"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: DEPI Microsoft AI Track Peer -->
+          <div class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-tag tag-ai">
+                <i class="fas fa-brain"></i> Machine Learning
+              </span>
+            </div>
+
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left quote-mark"></i>
+              <p>
+                "Collaborating with Mohamed during the intensive Microsoft-affiliated DEPI program has been thoroughly impressive. His grasp of statistical machine learning, Scikit-Learn pipelines, and model evaluation metrics is top-tier. Whenever our study cohort encountered complex tuning issues or data preprocessing edge cases, Mohamed was always ready to unblock teammates with clear, patient explanations and robust code."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-depi">
+                <span>YT</span>
+              </div>
+              <div class="author-info">
+                <div class="author-name">Youssef M. Tarek</div>
+                <div class="author-title">ML Engineer Trainee & Study Lead</div>
+                <div class="author-org">DEPI • Microsoft Learning Alignment</div>
+              </div>
+              <div class="testimonial-verified">
+                <i class="fas fa-check-circle" title="Verified DEPI Collaboration"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Full-Stack Web Development & Architecture -->
+          <div class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-tag tag-web">
+                <i class="fas fa-code"></i> Full-Stack System
+              </span>
+            </div>
+
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left quote-mark"></i>
+              <p>
+                "Reviewing Mohamed's DevPath platform architecture demonstrated what true full-stack capability looks like. He built a high-performance Node.js/Express REST backend, robust JWT token validation with OTP verification, and integrated 12 comprehensive track curriculums with seamless admin management. His code structure is clean, modular, and built with production discipline in mind."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-web">
+                <span>KM</span>
+              </div>
+              <div class="author-info">
+                <div class="author-name">Karim H. Mostafa</div>
+                <div class="author-title">Software Developer & Peer Reviewer</div>
+                <div class="author-org">DevPath Project Collaborator</div>
+              </div>
+              <div class="testimonial-verified">
+                <i class="fas fa-check-circle" title="Verified Project Review"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4: Enterprise Desktop Banking System (JavaEE & JavaFX) -->
+          <div class="testimonial-card">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="testimonial-tag tag-enterprise">
+                <i class="fas fa-shield-alt"></i> Enterprise OOP
+              </span>
+            </div>
+
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left quote-mark"></i>
+              <p>
+                "In our Bank Management System project, Mohamed led the enterprise architecture implementation using JavaEE and JavaFX. He strictly enforced the DAO pattern and engineered robust ACID database transaction rollbacks to prevent fund transfer concurrency anomalies. His attention to operational reliability, edge cases, and role-based access control was far beyond what you typically see at the undergraduate level. A truly disciplined engineer."
+              </p>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-java">
+                <span>AR</span>
+              </div>
+              <div class="author-info">
+                <div class="author-name">Ahmed S. Radwan</div>
+                <div class="author-title">Software Engineering Teammate</div>
+                <div class="author-org">Alexandria University CS Projects</div>
+              </div>
+              <div class="testimonial-verified">
+                <i class="fas fa-check-circle" title="Verified Academic Collaboration"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         DEDICATED HIGH-CONVERSION CTA BANNER
+         =================================================================== -->
+    <section class="conversion-cta-section">
+      <div class="container">
+        <div class="conversion-cta-card">
+          <span class="cta-card-badge" style="border-color: rgba(16, 185, 129, 0.45); color: #34d399; background: rgba(16, 185, 129, 0.14);">
+            <i class="fas fa-briefcase"></i> #OpenToWork — Immediate Availability
+          </span>
+          <h2 class="cta-card-title">
+            Ready to Build <span class="gradient-text">Next-Generation</span> AI & Scalable Software?
+          </h2>
+          <p class="cta-card-text">
+            Looking for an engineer who combines rigorous mathematical machine learning foundations with full-stack delivery, enterprise OOP architecture, and disciplined deadlines? Let's connect to discuss how I can bring immediate value to your engineering team or upcoming product.
+          </p>
+
+          <div class="cta-buttons-wrap">
+            <a href="#contact" class="btn btn-cta-pulse btn-shimmer">
+              <span>Initiate Direct Conversation</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed--zizo--" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-shimmer">
+              <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+            </a>
+            <button class="btn btn-outline-cyan btn-shimmer" data-modal-target="cvModal">
+              <i class="fas fa-file-download"></i> Download Full Resume
+            </button>
+          </div>
+
+          <div class="cta-quick-contacts">
+            <span><i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i> <strong>Open to Work:</strong> Immediate Availability</span>
+            <span><i class="fas fa-envelope"></i> Direct Email: <a href="mailto:Sci.MohamedAbdelaziz@alexu.edu.eg">Sci.MohamedAbdelaziz@alexu.edu.eg</a></span>
+            <span><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt • Remote Worldwide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT SECTION
+         =================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Connect</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">I am currently <strong>Open to Work</strong> and actively interviewing for AI/ML Engineering, Data Science, and Software Development positions. Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <!-- Email Card with Copy Button -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Direct Email</span>
+                <span class="contact-value" id="emailVal">Sci.MohamedAbdelaziz@alexu.edu.eg</span>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fas fa-map-pin"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Alexandria, Egypt</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/mohamed--zizo--" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/mohamed--zizo--</span>
+              </div>
+              <i class="fas fa-external-link-alt" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/mohamed-zizo-sketch" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/mohamed-zizo-sketch</span>
+              </div>
+              <i class="fas fa-external-link-alt" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+            </a>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email</label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="msgSubject" class="form-label">Subject</label>
+                <input type="text" id="msgSubject" class="form-control" placeholder="e.g. AI / ML Opportunity or Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="msgBody" class="form-label">Message</label>
+                <textarea id="msgBody" class="form-control" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-cta-pulse btn-shimmer" style="width: 100%;">
+                <span>Send Priority Message Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div style="text-align: center; margin-top: 10px; font-size: 0.8rem; color: var(--text-dim);">
+                <i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 4px;"></i> Direct transmission to Mohamed's mailbox • Guaranteed 24h response
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       MODAL 1: DEVPATH PROJECT DEEP DIVE
+       =================================================================== -->
+  <dialog id="devpathModal" class="custom-modal">
+    <div class="modal-header">
+      <div class="modal-title">
+        <i class="fas fa-rocket" style="color: var(--accent-cyan);"></i> DEVPATH — Career Platform Deep Dive
+      </div>
+      <button class="modal-close-btn" data-modal-close aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-info-circle"></i> Project Overview</h4>
+        <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+          <strong>DEVPATH</strong> is an all-in-one developer roadmap and career acceleration platform featuring 12 structured technology tracks spanning 108 comprehensive learning phases, interactive roadmaps, progress tracking, and an administrative control suite.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-check-double"></i> Core Technical Highlights</h4>
+        <ul class="modal-features-list">
+          <li><strong>12 Comprehensive Career Tracks:</strong> AI Engineering, Full-Stack, Machine Learning, DevOps, Cybersecurity, Data Analysis, Mobile, UI/UX, Game Dev, Embedded IoT, Blockchain, and QA Automation.</li>
+          <li><strong>Robust Security & Auth:</strong> JWT stateless session tokens, bcrypt password hashing, 6-digit OTP email verification with cooldown timer, and crypto-token based password reset flow.</li>
+          <li><strong>Admin Management Portal:</strong> Real-time user metrics, inquiries inbox with direct one-click email response, and verified status badges.</li>
+          <li><strong>Modern Glassmorphic UI:</strong> Responsive dark aesthetic with dynamic 3D Vanta.NET canvas particles and smooth interactive state transitions.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-network-wired"></i> Architecture & Stack</h4>
+        <div class="arch-block">
+Client (HTML5/CSS3/ES6+ Glassmorphic UI)
+       │  HTTP / REST API / JWT
+       ▼
+Node.js + Express.js Backend Server
+       │  Bcrypt Hash / OTP Verification / Token Cryptography
+       ▼
+MySQL Database (with Zero-Config In-Memory Storage Fallback)
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="https://github.com/mohamed-zizo-sketch/Devpath" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <i class="fab fa-github"></i> View GitHub Repo
+      </a>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </dialog>
+
+  <!-- ===================================================================
+       MODAL 2: BANK MANAGEMENT SYSTEM DEEP DIVE
+       =================================================================== -->
+  <dialog id="bankModal" class="custom-modal">
+    <div class="modal-header">
+      <div class="modal-title">
+        <i class="fas fa-university" style="color: #c084fc;"></i> Bank Management System — Enterprise Architecture
+      </div>
+      <button class="modal-close-btn" data-modal-close aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-info-circle"></i> System Purpose & Context</h4>
+        <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+          An enterprise desktop banking application developed with <strong>JavaEE layered architecture and JavaFX graphical user interface</strong>, designed to handle multi-teller workflows, transactional financial operations, and customer account administration with high reliability.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-check-double"></i> Functional Modules</h4>
+        <ul class="modal-features-list">
+          <li><strong>Multi-Role Access Control:</strong> Distinct privileges and dashboards for Bank Tellers, Branch Managers, and Customer views.</li>
+          <li><strong>ACID Transaction Processing:</strong> Deposits, withdrawals, and inter-account fund transfers implemented with strict SQL database transaction rollback safeguards (`commit()` / `rollback()`).</li>
+          <li><strong>Customer KYC & Account Management:</strong> Account opening, balance checking, profile verification, and dynamic interest calculation.</li>
+          <li><strong>Immutable Audit Log:</strong> Complete ledger and timestamped audit logs for every transaction and administrator action.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-cubes"></i> Layered Enterprise Architecture</h4>
+        <div class="arch-block">
+Presentation Layer : JavaFX FXML + Custom CSS (Modern Desktop UI)
+       │
+Service / Controller: Java Business Logic & Session Validation
+       │
+Data Access Layer  : JDBC DAO Pattern + PreparedStatements
+       │
+Database Tier      : Relational SQL Database (ACID Compliant)
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </dialog>
+
+  <!-- ===================================================================
+       MODAL 3: APPLIED ML PIPELINE DEEP DIVE
+       =================================================================== -->
+  <dialog id="mlModal" class="custom-modal">
+    <div class="modal-header">
+      <div class="modal-title">
+        <i class="fas fa-brain" style="color: var(--accent-emerald);"></i> Applied ML & Predictive Modeling Workflow
+      </div>
+      <button class="modal-close-btn" data-modal-close aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-info-circle"></i> Machine Learning Lifecycle</h4>
+        <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+          Developed as part of the <strong>Microsoft-affiliated DEPI</strong> and <strong>IBM Professional Certification</strong> curriculums, covering the end-to-end data preparation through model development and evaluation pipeline.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-tasks"></i> Technical Execution Stages</h4>
+        <ul class="modal-features-list">
+          <li><strong>Data Cleaning & Imputation:</strong> Handling outliers, missing values, and data type formatting using Pandas and NumPy.</li>
+          <li><strong>Exploratory Data Analysis (EDA):</strong> Statistical correlation heatmaps, feature distribution skewness, and visual inspections using Matplotlib and Seaborn.</li>
+          <li><strong>Feature Engineering:</strong> One-Hot Encoding, StandardScaler/MinMaxScaler normalization, and interaction terms.</li>
+          <li><strong>Model Training & Hyperparameter Tuning:</strong> Training baseline regression and classification models using Scikit-Learn with Cross-Validation.</li>
+          <li><strong>Evaluation Benchmarks:</strong> Detailed evaluation via Confusion Matrices, Precision-Recall curves, F1-Score, and ROC-AUC metrics.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title"><i class="fas fa-code"></i> Python Pipeline Stack</h4>
+        <div class="arch-block">
+Raw Datasets ➔ Pandas Wrangling ➔ Seaborn/Matplotlib Visualizations
+            ➔ Scikit-Learn Transformation Pipelines 
+            ➔ Model Training & Validation ➔ Benchmarked Evaluation Metrics
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </dialog>
+
+  <!-- ===================================================================
+       MODAL 4: FULL CV / RESUME MODAL
+       =================================================================== -->
+  <dialog id="cvModal" class="custom-modal" style="max-width: 820px;">
+    <div class="modal-header">
+      <div class="modal-title">
+        <i class="fas fa-file-contract" style="color: var(--accent-cyan);"></i> Curriculum Vitae — Mohamed Abd El Aziz
+      </div>
+      <button class="modal-close-btn" data-modal-close aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="modal-body" style="font-size: 0.9rem;">
+      <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 16px; display: flex; align-items: center; gap: 20px;">
+        <img src="assets/profile.jpg" alt="Mohamed Abd El Aziz" style="width: 76px; height: 76px; border-radius: 50%; object-fit: cover; object-position: center 15%; border: 2px solid var(--accent-cyan); box-shadow: 0 0 16px rgba(0, 242, 254, 0.35); flex-shrink: 0;">
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 1.4rem; color: #fff; font-weight: 800;">MOHAMED ABD EL AZIZ ALY MOHAMED</h2>
+          <div style="color: var(--accent-cyan); font-weight: 600; margin-top: 2px;">AI / ML Engineer</div>
+          <div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 6px; display: flex; flex-wrap: wrap; gap: 14px;">
+            <span><i class="fas fa-envelope"></i> Sci.MohamedAbdelaziz@alexu.edu.eg</span>
+            <span><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</span>
+            <span><i class="fab fa-linkedin"></i> linkedin.com/in/mohamed--zizo--</span>
+            <span><i class="fab fa-github"></i> github.com/mohamed-zizo-sketch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="otw-banner-modal">
+        <i class="fas fa-check-circle" style="font-size: 1rem;"></i>
+        <span><strong>Open to Work:</strong> Available immediately for AI/ML Engineer, Data Science, and Full-Stack Engineering roles & internships.</span>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">PROFILE</h4>
+        <p style="color: var(--text-muted); line-height: 1.6;">
+          Third-year Computer Science student at the Faculty of Science, Alexandria University, specializing in Artificial Intelligence and Machine Learning. Currently training as a Machine Learning Engineer through the Microsoft-affiliated Digital Egypt Pioneers Initiative (DEPI). Strong foundation in applied machine learning, with a disciplined, deadline-driven approach shaped by solid time management, stress management under pressure, and a consistent focus on delivering polished, working final products.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">EDUCATION</h4>
+        <p><strong>Bachelor in Computer Science, Faculty of Science</strong> | 2024 – Present (Expected 2028)</p>
+        <p style="color: var(--text-muted);">Alexandria University, Alexandria, Egypt — 3rd Year | <strong style="color: var(--accent-cyan);">GPA: 3.22</strong></p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">TRAINING & EXPERIENCE</h4>
+        <p><strong>Machine Learning Engineer Trainee</strong> — Digital Egypt Pioneers Initiative (DEPI), in affiliation with Microsoft | Current</p>
+        <ul class="modal-features-list" style="margin-top: 6px;">
+          <li>Undergoing an intensive, industry-aligned track covering the applied machine learning engineering lifecycle, from data preparation through model development and evaluation.</li>
+          <li>Working within Microsoft's learning framework and tooling to build practical, job-ready ML engineering skills.</li>
+          <li>Applying structured projects and time management to consistently deliver completed, working exercises and assignments on schedule.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">CERTIFICATIONS & ACCREDITATIONS</h4>
+        <p style="color: var(--text-main);">• <strong>Oracle AI Foundation Badge (2026)</strong> — Oracle Verified Credential</p>
+        <p style="color: var(--text-main); margin-top: 4px;">• <strong>ChatGPT Prompt Engineering for Developers</strong> — Andrew Ng & Isa Fulford, DeepLearning.AI & OpenAI</p>
+        <p style="color: var(--text-main); margin-top: 4px;">• <strong>Machine Learning with Python (20 hours)</strong> — IBM, via Coursera</p>
+        <p style="color: var(--text-main); margin-top: 4px;">• <strong>AI Engineering Professional Certificate (Current)</strong> — IBM, via Coursera</p>
+        <p style="color: var(--text-main); margin-top: 4px;">• <strong>Applied Machine Learning Trainee Track</strong> — Digital Egypt Pioneers Initiative (DEPI) & Microsoft</p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">SKILLS</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 4px; color: var(--text-muted);">
+          <li>• <strong>Machine Learning & GenAI:</strong> Applied ML fundamentals, Prompt Engineering, OpenAI API, Few-Shot Prompting, Model Evaluation</li>
+          <li>• <strong>Data & ML Libraries:</strong> NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn</li>
+          <li>• <strong>Full-Stack Web Development:</strong> Node.js, Express.js, RESTful APIs, PHP, MySQL, HTML5, Modern CSS3, JavaScript ES6+</li>
+          <li>• <strong>Programming Languages:</strong> Python, Java (JavaEE, JavaFX), PHP, SQL, HTML, CSS, JavaScript</li>
+          <li>• <strong>Expanding:</strong> Deep learning architectures, cloud AI workflows, and scalable AI microservices</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">UNIQUE COMPETITIVE EDGE (USP)</h4>
+        <p style="color: var(--text-main); font-size: 0.88rem; line-height: 1.6;">
+          <strong>The Production AI & Full-Stack Bridge:</strong> A unique dual capability combining rigorous mathematical machine learning foundations (DEPI Microsoft & IBM certified) with full-scale web software engineering (Node.js, Express, JavaEE, SQL). I don't just train isolated models in notebooks; I engineer end-to-end, resilient web architectures to deploy them to production.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="modal-section-title">LANGUAGES</h4>
+        <p style="color: var(--text-main);">Arabic — Native | English — Proficient | German — Conversational</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-outline-cyan btn-sm" onclick="window.print()">
+        <i class="fas fa-print"></i> Print / Save as PDF
+      </button>
+      <button class="btn btn-primary btn-sm" data-modal-close>Close</button>
+    </div>
+  </dialog>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="nav-brand">
+          <div class="brand-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="brand-text">
+            Mohamed <span>Abd El Aziz</span>
+          </div>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Credentials</a></li>
+          <li><a href="#testimonials">Endorsements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border-subtle); padding-top: 24px;">
+        <div class="footer-copyright">
+          &copy; 2026 Mohamed Abd El Aziz Aly Mohamed. All rights reserved.
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-dim);">
+          Engineered with Modern Glassmorphism & Animated Canvas
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toastNotice" class="toast-notice"></div>
+
+  <!-- Scripts -->
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
