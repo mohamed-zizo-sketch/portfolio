@@ -177,11 +177,11 @@ function initTypingEffect() {
   if (!target) return;
 
   const roles = [
-    'AI & Deep Learning Engineer',
-    'CS Student @ Faculty of Science, AlexU',
-    'Neural Networks & NLP with TensorFlow & Keras',
-    'Building Optimizers & Algorithms from Scratch',
-    'Enterprise Software & Compilers Engineer'
+    'AI Engineer',
+    'Deep Learning & Neural Networks',
+    'Natural Language Processing (NLP)',
+    'Mathematical Optimizers from Scratch (NumPy)',
+    'Computer Science & AI @ Faculty of Science, AlexU'
   ];
 
   let roleIndex = 0;

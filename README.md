@@ -1,6 +1,6 @@
 # 🌟 Mohamed Abd El Aziz — Professional Portfolio Website
 
-A modern, animated, glassmorphic portfolio website showcasing expertise in **Artificial Intelligence, Machine Learning, and Full-Stack Systems Engineering**.
+A modern, animated, glassmorphic portfolio website showcasing expertise in **Artificial Intelligence, Deep Learning, NLP, and Machine Learning Engineering**.
 
 ---
 
@@ -36,10 +36,10 @@ You can push the `portfolio` folder to a GitHub repository and turn on **GitHub 
 - **Interactive 3D Tilt**: Physics-based perspective tilt on project and hero visual cards.
 - **Native Top-Layer Modals**: Built with HTML5 `<dialog>` and modern `@starting-style` transitions for zero-dependency, accessible overlays.
 - **Full Curriculum Vitae (CV) Viewer**: Print-ready modal formatted directly from Mohamed's CV, complete with one-click print or export to PDF.
-- **Unique Selling Proposition (USP) Spotlight**: Highlights the rare hybrid advantage of combining advanced applied AI/ML modeling with real-world full-stack web platforms and production deployments.
-- **Skill Filter Matrix**: Real-time filtering across Machine Learning, Full-Stack Web Development, Data Science, Programming Languages, and Systems.
+- **Unique Selling Proposition (USP) Spotlight**: Highlights the rare advantage of combining first-principles mathematical AI/ML depth with solid software engineering foundations.
+- **Skill Filter Matrix**: Real-time filtering across Deep Learning & NLP, Machine Learning & Data, Math & Optimization, Compilers & Systems, and Software & APIs.
 - **Executive Glassmorphic Navbar**: Clean brand monogram, live status beacon, floating frosted glass pill capsule with glowing active indicators, and mobile slide-down drawer.
-- **Peer & Academic Endorsements (Team Leadership)**: Demo testimonials highlighting Alexandria University CS capstone team leadership, DEPI Microsoft collaboration, DevPath full-stack architecture, and JavaEE enterprise systems.
+- **Peer & Academic Endorsements (Team Leadership)**: Endorsements highlighting Alexandria University CS capstone team leadership, DEPI Microsoft collaboration, DevPath platform architecture, and enterprise Java systems.
 - **One-Click Email Copy & Mailto Form**: Client-side validation with instant visual toast notifications.
 
 ---
@@ -60,22 +60,20 @@ You can push the `portfolio` folder to a GitHub repository and turn on **GitHub 
 
 ---
 
-## 🏆 Featured Projects (8 Engineering Repositories)
+## 🏆 Featured Projects (7 Engineering Repositories)
 
 1. **[Optimizers from Scratch: Adam & AdaGrad](https://github.com/mohamed-zizo-sketch/optimizers-implementation-and-experiments)**  
    Mathematical implementation of Adam and AdaGrad gradient descent algorithms in pure NumPy without deep learning frameworks. Includes loss surface visualizations and learning rate convergence experiments.
-2. **Neural Networks & NLP Pipelines with TensorFlow & Keras**  
-   Applied multi-layer neural network architectures, text tokenization, sequence processing, and sentiment classification.
-3. **[Ames Housing Predictive ML & Regression Pipeline](https://github.com/mohamed-zizo-sketch/Ams_Housing)**  
+2. **[Ames Housing Predictive ML & Regression Pipeline](https://github.com/mohamed-zizo-sketch/Ams_Housing)**  
    Exploratory data analysis (EDA), feature engineering, missing value imputation, outlier handling, and cross-validated predictive regression modeling (Ridge, Lasso, ElasticNet, Random Forest).
-4. **[Regex → NFA → DFA Automata Engine](https://github.com/mohamed-zizo-sketch/regex-to-dfa-automata-engine)**  
+3. **[Regex → NFA → DFA Automata Engine](https://github.com/mohamed-zizo-sketch/regex-to-dfa-automata-engine)**  
    Theoretical computer science engine implementing Thompson's Construction, Subset Construction via ε-closure, interactive string simulation, and Mermaid diagram export.
-5. **[Enterprise Banking Core System](https://github.com/mohamed-zizo-sketch/enterprise-banking-system)**  
-   Full-stack JavaFX desktop banking platform with polymorphic accounts, atomic fund transfers, audited transaction ledger, and resilient dual-engine persistence (Oracle XE + embedded failover).
-6. **[Arithmetic Expression Engine & Tree Evaluator](https://github.com/mohamed-zizo-sketch/arithmetic-expression-engine)**  
+4. **[Enterprise Banking Core System](https://github.com/mohamed-zizo-sketch/enterprise-banking-system)**  
+   Enterprise JavaFX desktop banking platform with polymorphic accounts, atomic fund transfers, audited transaction ledger, and resilient dual-engine persistence (Oracle XE + embedded failover).
+5. **[Arithmetic Expression Engine & Tree Evaluator](https://github.com/mohamed-zizo-sketch/arithmetic-expression-engine)**  
    Lexical Tokenizer, Dijkstra's Shunting-yard Infix-to-Postfix algorithm, Binary Expression Tree with 4 traversals, and custom Hash Tables with Double Hashing.
-7. **[DEVPATH Career Roadmap Platform](https://github.com/mohamed-zizo-sketch/Devpath)**  
-   Full-stack career acceleration platform featuring 12 tech tracks (108 phases), interactive roadmaps, JWT auth, and 6-digit email OTP verification.
-8. **[Trend Trader FinTech Dashboard](https://github.com/mohamed-zizo-sketch/trend-trader-app)**  
+6. **[DEVPATH Career Roadmap Platform](https://github.com/mohamed-zizo-sketch/Devpath)**  
+   Comprehensive career acceleration platform featuring 12 tech tracks (108 phases), interactive roadmaps, JWT auth, and 6-digit email OTP verification.
+7. **[Trend Trader FinTech Dashboard](https://github.com/mohamed-zizo-sketch/trend-trader-app)**  
    Modern financial market trend analysis application built with TypeScript and React.
 
