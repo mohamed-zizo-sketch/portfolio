@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Initialize Skill Filters
   initSkillFilters();
 
+  // 3B. Initialize Project Filters
+  initProjectFilters();
+
   // 4. Initialize Project Cards 3D Tilt
   initCardTilt();
 
@@ -174,11 +177,11 @@ function initTypingEffect() {
   if (!target) return;
 
   const roles = [
-    'AI & Machine Learning Engineer',
-    'Full-Stack Web & Systems Developer',
-    'DEPI Trainee (Affiliated with Microsoft)',
-    'Bridging Applied AI with Scalable Web Apps',
-    'Data Science & Predictive Modeling'
+    'AI & Deep Learning Engineer',
+    'CS Student @ Faculty of Science, AlexU',
+    'Neural Networks & NLP with TensorFlow & Keras',
+    'Building Optimizers & Algorithms from Scratch',
+    'Enterprise Software & Compilers Engineer'
   ];
 
   let roleIndex = 0;
@@ -230,7 +233,42 @@ function initSkillFilters() {
 
       skillCards.forEach(card => {
         const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
+        if (filter === 'all' || category === filter || (category && category.split(' ').includes(filter))) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          }, 20);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.92)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 200);
+        }
+      });
+    });
+  });
+}
+
+/* ===================================================================
+   3B. PROJECT FILTER TABS
+   =================================================================== */
+function initProjectFilters() {
+  const filterBtns = document.querySelectorAll('.project-tab-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  if (!filterBtns.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter || (category && category.split(' ').includes(filter))) {
           card.style.display = 'flex';
           setTimeout(() => {
             card.style.opacity = '1';

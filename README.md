@@ -47,18 +47,35 @@ You can push the `portfolio` folder to a GitHub repository and turn on **GitHub 
 ## 👤 Profile & Credentials Featured
 
 - **Name**: Mohamed Abd El Aziz Aly Mohamed
-- **Role**: AI/ML Engineer & Full-Stack Web Developer | CS Student (3rd Year, Alexandria University, GPA 3.22)
-- **USP**: The Production AI & Full-Stack Bridge — taking ML models from notebooks to scalable web architectures.
-- **Web Stack**: Node.js, Express.js, MySQL, PHP, REST APIs, HTML5/CSS3, JavaScript ES6+.
-- **Training**: Machine Learning Engineer Trainee at DEPI (Digital Egypt Pioneers Initiative), in affiliation with Microsoft.
+- **Role**: AI & Deep Learning Engineer | CS Student (Faculty of Science, Alexandria University, GPA 3.22)
+- **Specialization**: AI Engineering — Deep Learning (TensorFlow, Keras), NLP, and Mathematical Optimizers from Scratch
+- **USP**: The First-Principles AI & Production Software Bridge — deriving deep learning algorithms and compilers from first principles, and deploying resilient software systems
+- **Training**: Machine Learning Engineer Trainee at DEPI (Digital Egypt Pioneers Initiative), in affiliation with Microsoft
 - **Certifications & Accreditations**:
   1. **Oracle AI Foundation Badge (2026)** — Oracle Verified Credential
   2. **ChatGPT Prompt Engineering for Developers** — Andrew Ng & Isa Fulford (DeepLearning.AI & OpenAI)
-  3. **Machine Learning with Python (20 Hours)** — IBM via Coursera
+  3. **Machine Learning with Python** — IBM via Coursera
   4. **AI Engineering Professional Certificate** — IBM via Coursera (Current)
-  5. **Applied Machine Learning Track** — Digital Egypt Pioneers Initiative (DEPI) in affiliation with Microsoft
-- **Featured Projects**:
-  1. **DEVPATH** — 12 Career Tracks, Curated Roadmaps & Full-Stack Platform
-  2. **Bank Management System** — Enterprise Desktop Application (JavaEE & JavaFX)
-  3. **Applied ML Modeling Pipeline** — Python, Pandas, NumPy, Scikit-Learn, Seaborn
+  5. **Applied Machine Learning Track** — Digital Egypt Pioneers Initiative (DEPI) & Microsoft
+
+---
+
+## 🏆 Featured Projects (8 Engineering Repositories)
+
+1. **[Optimizers from Scratch: Adam & AdaGrad](https://github.com/mohamed-zizo-sketch/optimizers-implementation-and-experiments)**  
+   Mathematical implementation of Adam and AdaGrad gradient descent algorithms in pure NumPy without deep learning frameworks. Includes loss surface visualizations and learning rate convergence experiments.
+2. **Neural Networks & NLP Pipelines with TensorFlow & Keras**  
+   Applied multi-layer neural network architectures, text tokenization, sequence processing, and sentiment classification.
+3. **[Ames Housing Predictive ML & Regression Pipeline](https://github.com/mohamed-zizo-sketch/Ams_Housing)**  
+   Exploratory data analysis (EDA), feature engineering, missing value imputation, outlier handling, and cross-validated predictive regression modeling (Ridge, Lasso, ElasticNet, Random Forest).
+4. **[Regex → NFA → DFA Automata Engine](https://github.com/mohamed-zizo-sketch/regex-to-dfa-automata-engine)**  
+   Theoretical computer science engine implementing Thompson's Construction, Subset Construction via ε-closure, interactive string simulation, and Mermaid diagram export.
+5. **[Enterprise Banking Core System](https://github.com/mohamed-zizo-sketch/enterprise-banking-system)**  
+   Full-stack JavaFX desktop banking platform with polymorphic accounts, atomic fund transfers, audited transaction ledger, and resilient dual-engine persistence (Oracle XE + embedded failover).
+6. **[Arithmetic Expression Engine & Tree Evaluator](https://github.com/mohamed-zizo-sketch/arithmetic-expression-engine)**  
+   Lexical Tokenizer, Dijkstra's Shunting-yard Infix-to-Postfix algorithm, Binary Expression Tree with 4 traversals, and custom Hash Tables with Double Hashing.
+7. **[DEVPATH Career Roadmap Platform](https://github.com/mohamed-zizo-sketch/Devpath)**  
+   Full-stack career acceleration platform featuring 12 tech tracks (108 phases), interactive roadmaps, JWT auth, and 6-digit email OTP verification.
+8. **[Trend Trader FinTech Dashboard](https://github.com/mohamed-zizo-sketch/trend-trader-app)**  
+   Modern financial market trend analysis application built with TypeScript and React.
 

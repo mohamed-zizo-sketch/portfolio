@@ -1047,12 +1047,16 @@ body {
 .skills-filter-nav {
   display: flex;
   align-items: center;
+.skills-filter-nav,
+.projects-filter-nav {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 }
-.skill-tab-btn {
+.skill-tab-btn,
+.project-tab-btn {
   padding: 8px 18px;
   border-radius: var(--radius-full);
   background: rgba(255, 255, 255, 0.04);
@@ -1064,7 +1068,9 @@ body {
   transition: all var(--transition-fast);
 }
 .skill-tab-btn:hover,
-.skill-tab-btn.active {
+.skill-tab-btn.active,
+.project-tab-btn:hover,
+.project-tab-btn.active {
   background: rgba(0, 242, 254, 0.12);
   border-color: var(--accent-cyan);
   color: #fff;
@@ -1211,6 +1217,16 @@ body {
   background: rgba(16, 185, 129, 0.2);
   border-color: var(--accent-emerald);
   color: var(--accent-emerald);
+}
+.badge-systems {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: #f59e0b;
+  color: #fbbf24;
+}
+.badge-deeplearning {
+  background: rgba(236, 72, 153, 0.2);
+  border-color: #ec4899;
+  color: #f472b6;
 }
 
 .project-body {
