@@ -265,21 +265,20 @@ function initProjectFilters() {
       btn.classList.add('active');
 
       const filter = btn.getAttribute('data-filter');
+      let visibleIdx = 0;
 
       projectCards.forEach(card => {
         const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter || (category && category.split(' ').includes(filter))) {
+        const matches = filter === 'all' || category === filter || (category && category.split(' ').includes(filter));
+
+        if (matches) {
           card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          }, 20);
+          card.style.animation = 'none';
+          void card.offsetWidth; // Force DOM reflow
+          card.style.animation = `projectFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) ${visibleIdx * 0.05}s both`;
+          visibleIdx++;
         } else {
-          card.style.opacity = '0';
-          card.style.transform = 'scale(0.92)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 200);
+          card.style.display = 'none';
         }
       });
     });
